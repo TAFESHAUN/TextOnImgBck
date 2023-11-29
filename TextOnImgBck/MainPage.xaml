@@ -37,19 +37,23 @@
                        FontAttributes="Italic"/>
             </StackLayout>
         </Grid>
-        <Grid Grid.Row="2" BackgroundColor="Coral">
+        <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <StackLayout Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="0">
+            <Image Source="backg.png" Aspect="AspectFill" Grid.ColumnSpan="3" ZIndex="0"/>
+            <StackLayout ZIndex="1" Grid.Column="0" MaximumHeightRequest="50" MaximumWidthRequest="100" Margin="20,10,0,0" BackgroundColor="Black" Opacity="0.35">
+            </StackLayout>
+            <Image Source="roi_logo_colored.png" Aspect="AspectFill" Grid.Column="1" ZIndex="1" Margin="5"/>
+            <StackLayout ZIndex="2" Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="0">
                 <Button Text="button 1" BackgroundColor="LightGray" TextColor="Black"></Button>
             </StackLayout>
-            <StackLayout Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="1">
+            <StackLayout ZIndex="2" Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="1">
                 <Button Text="button 2" BackgroundColor="LightGray" TextColor="Black"></Button>
             </StackLayout>
-            <StackLayout Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="2">
+            <StackLayout ZIndex="2" Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="2">
                 <Button Text="button 3" BackgroundColor="LightGray" TextColor="Black"></Button>
             </StackLayout>
         </Grid>
